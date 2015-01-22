@@ -1,0 +1,6 @@
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoServer\MyDiskInfoServer\bin\Debug\MyDiskInfoServer.exe.config
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoServer\MyDiskInfoServer\obj\Debug\MyDiskInfoServer.csprojResolveAssemblyReference.cache
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoServer\MyDiskInfoServer\bin\Debug\MyDiskInfoServer.exe
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoServer\MyDiskInfoServer\bin\Debug\MyDiskInfoServer.pdb
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoServer\MyDiskInfoServer\obj\Debug\MyDiskInfoServer.exe
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoServer\MyDiskInfoServer\obj\Debug\MyDiskInfoServer.pdb

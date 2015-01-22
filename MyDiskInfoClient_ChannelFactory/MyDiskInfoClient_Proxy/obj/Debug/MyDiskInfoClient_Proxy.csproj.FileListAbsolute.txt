@@ -1,0 +1,8 @@
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_Proxy\bin\Debug\MyDiskInfoClient_Proxy.exe.config
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_Proxy\bin\Debug\MyDiskInfoClient_Proxy.exe
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_Proxy\bin\Debug\MyDiskInfoClient_Proxy.pdb
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_Proxy\obj\Debug\MyDiskInfoClient_Proxy.Form1.resources
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_Proxy\obj\Debug\MyDiskInfoClient_Proxy.Properties.Resources.resources
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_Proxy\obj\Debug\MyDiskInfoClient_Proxy.csproj.GenerateResource.Cache
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_Proxy\obj\Debug\MyDiskInfoClient_Proxy.exe
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_Proxy\obj\Debug\MyDiskInfoClient_Proxy.pdb

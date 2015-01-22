@@ -1,0 +1,9 @@
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_ChannelFactory\bin\Debug\MyDiskInfoClient_ChannelFactory.exe.config
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_ChannelFactory\bin\Debug\MyDiskInfoClient_ChannelFactory.exe
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_ChannelFactory\bin\Debug\MyDiskInfoClient_ChannelFactory.pdb
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_ChannelFactory\obj\Debug\MyDiskInfoClient_ChannelFactory.csprojResolveAssemblyReference.cache
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_ChannelFactory\obj\Debug\MyDiskInfoClient_ChannelFactory.Form1.resources
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_ChannelFactory\obj\Debug\MyDiskInfoClient_ChannelFactory.Properties.Resources.resources
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_ChannelFactory\obj\Debug\MyDiskInfoClient_ChannelFactory.csproj.GenerateResource.Cache
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_ChannelFactory\obj\Debug\MyDiskInfoClient_ChannelFactory.exe
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfoClient_ChannelFactory\MyDiskInfoClient_ChannelFactory\obj\Debug\MyDiskInfoClient_ChannelFactory.pdb

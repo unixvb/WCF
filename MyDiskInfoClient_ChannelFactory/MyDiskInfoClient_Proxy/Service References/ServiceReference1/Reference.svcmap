@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a5444e8b-9b03-4c7d-8555-ad20fbeeabff" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/MyDiskInfo" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MyDiskInfo.xsd" MetadataType="Schema" ID="29efc7f0-50d2-49c5-9cbe-48b905ec9a0d" SourceId="1" SourceUrl="http://localhost/MyDiskInfo?xsd=xsd1" />
+    <MetadataFile FileName="MyDiskInfo.wsdl" MetadataType="Wsdl" ID="5755bd6c-af91-48fd-92b0-c30fd8a22a6a" SourceId="1" SourceUrl="http://localhost/MyDiskInfo?wsdl=wsdl0" />
+    <MetadataFile FileName="MyDiskInfo.disco" MetadataType="Disco" ID="e18a1bc9-764c-4aba-bb4b-d61da0de88f9" SourceId="1" SourceUrl="http://localhost/MyDiskInfo?disco" />
+    <MetadataFile FileName="MyDiskInfo1.wsdl" MetadataType="Wsdl" ID="b2090b4a-50e7-4c9c-bcca-bdbc064e0dfb" SourceId="1" SourceUrl="http://localhost/MyDiskInfo?wsdl" />
+    <MetadataFile FileName="MyDiskInfo1.xsd" MetadataType="Schema" ID="97d44c76-ddb0-4ef6-9218-c23776b46bfd" SourceId="1" SourceUrl="http://localhost/MyDiskInfo?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

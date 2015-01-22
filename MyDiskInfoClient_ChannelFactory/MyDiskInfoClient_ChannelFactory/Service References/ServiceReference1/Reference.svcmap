@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6aa18fff-a6e4-439b-b9e3-9de4e4abae14" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/MyDiskInfo" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MyDiskInfo.xsd" MetadataType="Schema" ID="6424cb3b-4e23-4c9e-84d1-65409a76667f" SourceId="1" SourceUrl="http://localhost/MyDiskInfo?xsd=xsd1" />
+    <MetadataFile FileName="MyDiskInfo.wsdl" MetadataType="Wsdl" ID="33246df0-87cd-437d-ab51-61a29756ec93" SourceId="1" SourceUrl="http://localhost/MyDiskInfo?wsdl=wsdl0" />
+    <MetadataFile FileName="MyDiskInfo.disco" MetadataType="Disco" ID="cb4d48db-2384-4d56-991b-c0b25831ca9f" SourceId="1" SourceUrl="http://localhost/MyDiskInfo?disco" />
+    <MetadataFile FileName="MyDiskInfo1.wsdl" MetadataType="Wsdl" ID="1d600161-ebde-454f-8cf9-615cb3d27c18" SourceId="1" SourceUrl="http://localhost/MyDiskInfo?wsdl" />
+    <MetadataFile FileName="MyDiskInfo1.xsd" MetadataType="Schema" ID="6758dd49-bb1b-4fb1-a37b-57676be21a60" SourceId="1" SourceUrl="http://localhost/MyDiskInfo?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

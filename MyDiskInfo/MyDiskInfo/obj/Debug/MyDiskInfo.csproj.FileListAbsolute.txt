@@ -1,0 +1,1 @@
+c:\users\myznikov\documents\visual studio 2012\Projects\MyDiskInfo\MyDiskInfo\bin\Debug\MyDiskInfo.exe.config

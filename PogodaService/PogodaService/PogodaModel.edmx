@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PogodaDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="PogodaDBModelStoreContainer">
+          <EntitySet Name="Location" EntityType="PogodaDBModel.Store.Location" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Pogoda" EntityType="PogodaDBModel.Store.Pogoda" store:Type="Tables" store:Schema="dbo" store:Name="Pogoda">
+            <DefiningQuery>SELECT 
+      [Pogoda].[PogodaID] AS [PogodaID], 
+      [Pogoda].[temperature] AS [temperature], 
+      [Pogoda].[Date] AS [Date], 
+      [Pogoda].[LocID] AS [LocID]
+      FROM [dbo].[Pogoda] AS [Pogoda]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK__Pogoda__LocID__1920BF5C" Association="PogodaDBModel.Store.FK__Pogoda__LocID__1920BF5C">
+            <End Role="Location" EntitySet="Location" />
+            <End Role="Pogoda" EntitySet="Pogoda" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Location">
+          <Key>
+            <PropertyRef Name="LocationID" />
+          </Key>
+          <Property Name="LocationID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="country" Type="nvarchar" MaxLength="32" />
+          <Property Name="city" Type="nvarchar" MaxLength="32" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'PogodaDB.dbo.Pogoda' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Pogoda">
+          <Key>
+            <PropertyRef Name="PogodaID" />
+            <PropertyRef Name="LocID" />
+          </Key>
+          <Property Name="PogodaID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="temperature" Type="nvarchar" MaxLength="32" />
+          <Property Name="Date" Type="nvarchar" MaxLength="32" />
+          <Property Name="LocID" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Pogoda__LocID__1920BF5C">
+          <End Role="Location" Type="PogodaDBModel.Store.Location" Multiplicity="1" />
+          <End Role="Pogoda" Type="PogodaDBModel.Store.Pogoda" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Location">
+              <PropertyRef Name="LocationID" />
+            </Principal>
+            <Dependent Role="Pogoda">
+              <PropertyRef Name="LocID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PogodaDBModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="PogodaDBEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Location" EntityType="PogodaDBModel.Location" />
+          <EntitySet Name="Pogoda" EntityType="PogodaDBModel.Pogoda" />
+          <AssociationSet Name="FK__Pogoda__LocID__1920BF5C" Association="PogodaDBModel.FK__Pogoda__LocID__1920BF5C">
+            <End Role="Location" EntitySet="Location" />
+            <End Role="Pogoda" EntitySet="Pogoda" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Location">
+          <Key>
+            <PropertyRef Name="LocationID" />
+          </Key>
+          <Property Name="LocationID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="country" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="city" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Pogoda" Relationship="PogodaDBModel.FK__Pogoda__LocID__1920BF5C" FromRole="Location" ToRole="Pogoda" />
+        </EntityType>
+        <EntityType Name="Pogoda">
+          <Key>
+            <PropertyRef Name="PogodaID" />
+            <PropertyRef Name="LocID" />
+          </Key>
+          <Property Name="PogodaID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="temperature" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="Date" Type="String" MaxLength="32" Unicode="true" FixedLength="false" />
+          <Property Name="LocID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Location" Relationship="PogodaDBModel.FK__Pogoda__LocID__1920BF5C" FromRole="Pogoda" ToRole="Location" />
+        </EntityType>
+        <Association Name="FK__Pogoda__LocID__1920BF5C">
+          <End Role="Location" Type="PogodaDBModel.Location" Multiplicity="1" />
+          <End Role="Pogoda" Type="PogodaDBModel.Pogoda" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Location">
+              <PropertyRef Name="LocationID" />
+            </Principal>
+            <Dependent Role="Pogoda">
+              <PropertyRef Name="LocID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PogodaDBModelStoreContainer" CdmEntityContainer="PogodaDBEntities">
+          <EntitySetMapping Name="Location">
+            <EntityTypeMapping TypeName="PogodaDBModel.Location">
+              <MappingFragment StoreEntitySet="Location">
+                <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="city" ColumnName="city" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pogoda">
+            <EntityTypeMapping TypeName="PogodaDBModel.Pogoda">
+              <MappingFragment StoreEntitySet="Pogoda">
+                <ScalarProperty Name="PogodaID" ColumnName="PogodaID" />
+                <ScalarProperty Name="temperature" ColumnName="temperature" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="LocID" ColumnName="LocID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

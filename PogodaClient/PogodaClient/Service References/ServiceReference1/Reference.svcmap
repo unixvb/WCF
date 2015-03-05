@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7e380bbd-71ff-493f-8e0b-96e908c225fe" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/MyPogoda" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MyPogoda.xsd" MetadataType="Schema" ID="4e434505-5bb2-464d-9804-d1caa54f6080" SourceId="1" SourceUrl="http://localhost/MyPogoda?xsd=xsd2" />
+    <MetadataFile FileName="MyPogoda.wsdl" MetadataType="Wsdl" ID="b4a2d0aa-5c8e-4060-872d-8c4dfb7459f1" SourceId="1" SourceUrl="http://localhost/MyPogoda?wsdl" />
+    <MetadataFile FileName="MyPogoda.disco" MetadataType="Disco" ID="8860f5e0-c175-4e4d-9258-045414e6b442" SourceId="1" SourceUrl="http://localhost/MyPogoda?disco" />
+    <MetadataFile FileName="MyPogoda1.wsdl" MetadataType="Wsdl" ID="39c8c424-e2ac-4ed5-ac18-dddccb134266" SourceId="1" SourceUrl="http://localhost/MyPogoda?wsdl=wsdl0" />
+    <MetadataFile FileName="MyPogoda1.xsd" MetadataType="Schema" ID="e190dce9-0e18-402f-9120-5f9494b6af20" SourceId="1" SourceUrl="http://localhost/MyPogoda?xsd=xsd1" />
+    <MetadataFile FileName="MyPogoda2.xsd" MetadataType="Schema" ID="4171551d-74b3-4e03-8815-a3d03200ffba" SourceId="1" SourceUrl="http://localhost/MyPogoda?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

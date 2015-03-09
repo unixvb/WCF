@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
+using System.ServiceModel.Description;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -43,9 +44,26 @@ namespace WCF_BankService
         {
             ServiceHost sh = new ServiceHost(typeof(BankService));
             sh.Open();
+            sh.Close();
+            ServiceHost svcHost = new ServiceHost(typeof(BankService), new Uri("http://localhost/BankService"));
+
+            ServiceMetadataBehavior smb = svcHost.Description.Behaviors.Find<ServiceMetadataBehavior>();
+            if (smb == null)
+                smb = new ServiceMetadataBehavior();
+            smb.HttpGetEnabled = true;
+            smb.MetadataExporter.PolicyVersion = PolicyVersion.Policy15;
+            svcHost.Description.Behaviors.Add(smb);
+            // Add MEX endpoint
+            svcHost.AddServiceEndpoint(
+              ServiceMetadataBehavior.MexContractName,
+              MetadataExchangeBindings.CreateMexHttpBinding(),
+              "mex"
+            );
+            svcHost.AddServiceEndpoint(typeof(IMetadataExchange), new WSHttpBinding(), "");
+            svcHost.Open();
             Console.WriteLine("Press <ENTER> to Exit");
             Console.ReadLine();
-            sh.Close();
+            svcHost.Close();
         }
     }
 }

@@ -42,11 +42,7 @@ namespace WCF_BankService
     {
         static void Main(string[] args)
         {
-            ServiceHost sh = new ServiceHost(typeof(BankService));
-            sh.Open();
-            sh.Close();
             ServiceHost svcHost = new ServiceHost(typeof(BankService), new Uri("http://localhost/BankService"));
-
             ServiceMetadataBehavior smb = svcHost.Description.Behaviors.Find<ServiceMetadataBehavior>();
             if (smb == null)
                 smb = new ServiceMetadataBehavior();
